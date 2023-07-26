@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		ECDCBFBF2A71E56F005310B3 /* BarbieCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCBFBE2A71E56F005310B3 /* BarbieCalculatorApp.swift */; };
-		ECDCBFC12A71E56F005310B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCBFC02A71E56F005310B3 /* ContentView.swift */; };
 		ECDCBFC32A71E571005310B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDCBFC22A71E571005310B3 /* Assets.xcassets */; };
 		ECDCBFC62A71E571005310B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDCBFC52A71E571005310B3 /* Preview Assets.xcassets */; };
+		ECDCBFD02A71E586005310B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCBFCC2A71E585005310B3 /* ContentView.swift */; };
+		ECDCBFD12A71E586005310B3 /* TotalText.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCBFCD2A71E585005310B3 /* TotalText.swift */; };
+		ECDCBFD22A71E586005310B3 /* ButtonGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCBFCE2A71E586005310B3 /* ButtonGrid.swift */; };
+		ECDCBFD32A71E586005310B3 /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDCBFCF2A71E586005310B3 /* CalculatorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ECDCBFBB2A71E56F005310B3 /* BarbieCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarbieCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDCBFBE2A71E56F005310B3 /* BarbieCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarbieCalculatorApp.swift; sourceTree = "<group>"; };
-		ECDCBFC02A71E56F005310B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECDCBFC22A71E571005310B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECDCBFC52A71E571005310B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECDCBFCC2A71E585005310B3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../Calculator/Calculator/ContentView.swift; sourceTree = "<group>"; };
+		ECDCBFCD2A71E585005310B3 /* TotalText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalText.swift; sourceTree = "<group>"; };
+		ECDCBFCE2A71E586005310B3 /* ButtonGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonGrid.swift; sourceTree = "<group>"; };
+		ECDCBFCF2A71E586005310B3 /* CalculatorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				ECDCBFBE2A71E56F005310B3 /* BarbieCalculatorApp.swift */,
-				ECDCBFC02A71E56F005310B3 /* ContentView.swift */,
+				ECDCBFCE2A71E586005310B3 /* ButtonGrid.swift */,
+				ECDCBFCF2A71E586005310B3 /* CalculatorButton.swift */,
+				ECDCBFCC2A71E585005310B3 /* ContentView.swift */,
+				ECDCBFCD2A71E585005310B3 /* TotalText.swift */,
 				ECDCBFC22A71E571005310B3 /* Assets.xcassets */,
 				ECDCBFC42A71E571005310B3 /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECDCBFC12A71E56F005310B3 /* ContentView.swift in Sources */,
+				ECDCBFD32A71E586005310B3 /* CalculatorButton.swift in Sources */,
 				ECDCBFBF2A71E56F005310B3 /* BarbieCalculatorApp.swift in Sources */,
+				ECDCBFD02A71E586005310B3 /* ContentView.swift in Sources */,
+				ECDCBFD22A71E586005310B3 /* ButtonGrid.swift in Sources */,
+				ECDCBFD12A71E586005310B3 /* TotalText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
