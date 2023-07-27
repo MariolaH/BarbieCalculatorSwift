@@ -17,16 +17,15 @@ struct CalculatorButton: View {
     
     var body: some View {
         Button {
-            withAnimation(.easeOut(duration: 0.3)
-                .repeatCount(1, autoreverses: true)) {
-                    animationAmount += 0.07
-                    action(self)
-                }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                withAnimation(.easeInOut(duration: 0.05)) {
+            withAnimation(.easeIn(duration: 0.15)) {
+                animationAmount = 0.5 // Set to a smaller size
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                withAnimation(.easeOut(duration: 0.3)) {
                     animationAmount = 1.0 // Reset to original size
                 }
             }
+            action(self)
         } label: {
             Text(buttonText)
                 .font(.largeTitle)

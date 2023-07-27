@@ -24,9 +24,9 @@ struct ButtonGrid: View {
     var body: some View {
         Grid {
             GridRow {
-                CalculatorButton(buttonText: "1", action: numberWasPressed)
-                CalculatorButton(buttonText: "2", action: numberWasPressed)
-                CalculatorButton(buttonText: "3", action: numberWasPressed)
+                CalculatorButton(buttonText: "7", action: numberWasPressed)
+                CalculatorButton(buttonText: "8", action: numberWasPressed)
+                CalculatorButton(buttonText: "9", action: numberWasPressed)
                 CalculatorButton(color: Color(hue: 330.0 / 360.0, saturation: 1.0, brightness: 1.1), buttonText: "+", action: modeWasPressed, mode: .addition)
             }
             GridRow {
@@ -36,9 +36,9 @@ struct ButtonGrid: View {
                 CalculatorButton(color: Color(hue: 330.0 / 360.0, saturation: 1.0, brightness: 1.1), buttonText: "-", action: modeWasPressed, mode: .subtration)
             }
             GridRow {
-                CalculatorButton(buttonText: "7", action: numberWasPressed)
-                CalculatorButton(buttonText: "8", action: numberWasPressed)
-                CalculatorButton(buttonText: "9", action: numberWasPressed)
+                CalculatorButton(buttonText: "1", action: numberWasPressed)
+                CalculatorButton(buttonText: "2", action: numberWasPressed)
+                CalculatorButton(buttonText: "3", action: numberWasPressed)
                 CalculatorButton(color: Color(hue: 330.0 / 360.0, saturation: 1.0, brightness: 1.1), buttonText: "x", action: modeWasPressed, mode: .multiplication)
             }
             GridRow {
