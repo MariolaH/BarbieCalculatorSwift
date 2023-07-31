@@ -10,8 +10,9 @@ import SwiftUI
 enum CalculatorMode {
     case notSet
     case addition
-    case subtration
+    case subtraction
     case multiplication
+    case division
 }
 
 struct ButtonGrid: View {
@@ -24,6 +25,12 @@ struct ButtonGrid: View {
     var body: some View {
         Grid {
             GridRow {
+                CalculatorButton(buttonText: "")
+                CalculatorButton(buttonText: "")
+                CalculatorButton(buttonText: "")
+                CalculatorButton(color: Color(hue: 330.0 / 360.0, saturation: 1.0, brightness: 1.1), buttonText: "/", action: modeWasPressed, mode: .division)
+            }
+            GridRow {
                 CalculatorButton(buttonText: "7", action: numberWasPressed)
                 CalculatorButton(buttonText: "8", action: numberWasPressed)
                 CalculatorButton(buttonText: "9", action: numberWasPressed)
@@ -33,7 +40,7 @@ struct ButtonGrid: View {
                 CalculatorButton(buttonText: "4", action: numberWasPressed)
                 CalculatorButton(buttonText: "5", action: numberWasPressed)
                 CalculatorButton(buttonText: "6", action: numberWasPressed)
-                CalculatorButton(color: Color(hue: 330.0 / 360.0, saturation: 1.0, brightness: 1.1), buttonText: "-", action: modeWasPressed, mode: .subtration)
+                CalculatorButton(color: Color(hue: 330.0 / 360.0, saturation: 1.0, brightness: 1.1), buttonText: "-", action: modeWasPressed, mode: .subtraction)
             }
             GridRow {
                 CalculatorButton(buttonText: "1", action: numberWasPressed)
@@ -83,10 +90,16 @@ struct ButtonGrid: View {
         }
         if currentMode == .addition {
             savedInt += currentInt
-        } else if currentMode == .subtration {
+        } else if currentMode == .subtraction {
             savedInt -= currentInt
         } else if currentMode == .multiplication {
             savedInt *= currentInt
+        } else if currentMode == .division {
+             guard currentInt != 0 else {
+                return
+        }
+            savedInt /= currentInt
+            
         }
         currentInt = savedInt
         updateText()
